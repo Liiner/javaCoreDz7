@@ -33,7 +33,7 @@ public class RequestHandler {
         String code = objectMapper.readTree(json).get(0).at("/Key").asText();
         return  code;
     }
-    public static String getForecast(String cityCode) throws IOException {
+    public static String getForecastFiveDay(String cityCode) throws IOException {
         HttpUrl httpUrl = new HttpUrl.Builder()
                 .scheme("http")
                 .host(host)

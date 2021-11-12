@@ -5,7 +5,7 @@ public class Main {
 
         //погода на 5 дней Ижевск
         String cityCode = RequestHandler.detectCityId("Izhevsk");
-        String forecastFiveDay = RequestHandler.getForecast(cityCode);
+        String forecastFiveDay = RequestHandler.getForecastFiveDay(cityCode);
         System.out.println(cityCode);
         System.out.println(forecastFiveDay);
 
